@@ -11,7 +11,7 @@ const server=http.createServer((req,res)=>{
             if(err)
             {
                 res.writeHead(404,{'Content-Type': 'text/html'});
-                return res.end("404 page not found!");
+                return res.end("404 ");
             }
             res.writeHead(200, {'Content-Type': 'text/html'});
             res.write(data);
